@@ -5,27 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wellington Junior - Bootcamp Inter</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/javascript/index.js" defer></script>
 </head>
 <body>
     <header>
-        <h1 id="title">Wellington Junior Home Page</h1>
+        <h1 id="title"></h1>
     </header>
     <section class="container">
         <header>
             <h2 class="title-apresentation">Who am I?</h2>
         </header>
         <div class="container-apresentation">
-            <a href="https://www.linkedin.com/in/wellington-luis-41513874" target="_blank"><img src="https://github.com/Wellington2708.png" alt="Photo of Wellington. A dark-skinned man with black hair and a beard." class="img-thumbnail image-profile"></a>
-            <p>My name is Wellington Junior, I'm 37 years old. I am Brazilian, but I live in Portugal. I'm a student of System Development Technician at SENAC, where I am interested in becoming a Fullstack developer.
-            This is my <a href="https://www.linkedin.com/in/wellington-luis-41513874/" target="_blank" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">LinkedIn profile</a> and I hope to make good connections through it.
-            </p>
+
         </div>
     </section>
     <main class="container">
         <header>
-            <h2 class="title-knowledge">My knowledge</h2>
+            <h2 class="title-knowledge" id="counter">My knowledge</h2>
         </header>
             <p>
                 I have knowledge of HTML, CSS, JavaScript, React, and following the course methodology, I am progressing towards learning Java, TypeScript, and other programming languages.
@@ -43,6 +41,15 @@
             My goal with this Bootcamp is to learn as much as possible about web development, both front-end and back-end, to be able to build complete and functional web applications. I also want to improve my problem-solving skills and learn best practices in coding.
             Finally, this is a project for study purposes, therefore the structure of the folders and files may not be in the best architecture, as this specific repository will serve to record the knowledge acquired in the DIO Inter Bootcamp.
         </p>
+    </section>
+    // working whith bootstrap button and count in the JS
+
+    <section class="container count">
+        <h2>Counter</h2>
+        <p>Click the button to count.</p>
+        <h3 class="number">0</h3>
+        <button type="button" class="btn btn-primary subtract">-</button>
+        <button type="button" class="btn btn-primary plus">+</button>
     </section>
 
 </body>
