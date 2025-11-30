@@ -37,3 +37,15 @@ body{
     margin-bottom: 20px;
     gap: 20px;
 }
+
+.count {
+    font-size: 2em;
+    text-align: center;
+}
+
+.btn-primary {
+    width: 100px;
+    font-size: 1em;
+    text-align: center;
+}
+
