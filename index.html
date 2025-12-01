@@ -43,14 +43,38 @@
         </p>
     </section>
     // working whith bootstrap button and count in the JS
-
-    <section class="container count">
-        <h2>Counter</h2>
-        <p>Click the button to count.</p>
-        <h3 class="number">0</h3>
-        <button type="button" class="btn btn-primary subtract">-</button>
-        <button type="button" class="btn btn-primary plus">+</button>
+    <section class="container">
+        <header>
+            <h2>Counter</h2>
+            <p>Click the button to count</p>
+        </header>
+        <div class="container-buttons">
+            <button type="button" class="btn btn-primary subtract">-</button>
+            <h3 class="number">0</h3>
+            <button type="button" class="btn btn-primary plus">+</button>
+        </div>
+        <div>
     </section>
+            <header>
+                <h2 class="title-input">Input List To Do</h2>
+            </header>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Item</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Add Item" id="to-do-input">
+                <button id="button-input" class="input-group-text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">Add</button>
+              </div>
+            </div>
+        </div>
+       
+
+    <ul class="list-group" id="to-do-list">
+        <!-- List items will be added here dynamically -->
+    </ul>
+  
+  
+    </section>
+
+
 
 </body>
 </html>

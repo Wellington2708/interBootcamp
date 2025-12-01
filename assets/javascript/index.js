@@ -33,4 +33,25 @@ subtract.addEventListener("click", () => {
     number.textContent = count;
 })
 
+// to-do-list
+// I created a to-do-list that adds items when clicking on the button using AddEventListener.
+let buttonAddItem = document.querySelector("#button-input");
+buttonAddItem.addEventListener("click", () => {
+    let toDoList = document.querySelector("#to-do-input").value;
+    let list = document.querySelector("#to-do-list");
+    const newItem = `
+        <div class="input-group mb-3">
+            <input class="form-check-input mt-0 input-group-text" type="checkbox" value="" aria-label="Checkbox for following text input">
+            <div class="form-control" aria-label="Text input with checkbox">${toDoList}</div>
+        </div>
+    `;
+
+    // adicionar sem recriar o conteúdo antigo
+    list.insertAdjacentHTML("beforeend", newItem);
+
+    document.querySelector("#to-do-input").value = "";
+});
+
+
+
 
