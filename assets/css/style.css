@@ -1,5 +1,6 @@
 :root {
     --primary-color: #3498db;
+    --secondary-color: rgb(33, 16, 218);
     --font-color: #ffffff;
     --background-color: #1c1c1c;
 }
@@ -49,3 +50,41 @@ body{
     text-align: center;
 }
 
+.container-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.title-input{
+    margin: 1em;
+    text-align: center;
+}
+
+.input-group-text, #button-input {
+ background-color: var(--primary-color);
+}
+
+.mb-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto 2em auto;
+}
+
+#button-input:hover {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+}
+
+
+
+.item-list {
+    display: flex;
+}
+
+.input-group .form-check-input:checked + .form-control {
+    text-decoration: line-through;
+    color: #888;
+}
